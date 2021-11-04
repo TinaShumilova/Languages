@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿void Method2(string msg)
+{
+    Console.WriteLine(msg);
+}
+
+Method2("Текст сообщения");
