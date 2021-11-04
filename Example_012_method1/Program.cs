@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿void Method1() // создание метода
+{
+    Console.WriteLine("Автор...");     // Тело метода 
+}
+
+Method1(); // вызов метода
