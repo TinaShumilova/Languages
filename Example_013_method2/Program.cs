@@ -16,4 +16,5 @@ void Method21(string msg, int count)
     
 }
 
-Method21("Текст", 3);
+Method21(msg: "Текст", count: 3);
+Method21(count: 3, msg: "новый Текст");
