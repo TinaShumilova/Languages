@@ -46,9 +46,29 @@ void SelectionSortMax(int[] A)
     }
 }
 
+void SelectionSortMax2(int[] B)
+{
+    for(int i = 0; i< B.Length - 1; i++)
+    {
+        int minPossition = i;
+        for(int j = i + 1; j < B.Length; j++)
+        {
+            if(B[j] > B[minPossition])
+            {
+                minPossition = j;
+            }
+        }
+        int temp = B[i];
+        B[i] = B[minPossition];
+        B[minPossition] = temp;
+    }
+}
+
 
 PrintArray(array);
 SelectionSort(array);
 PrintArray(array);
 SelectionSortMax(array);
+PrintArray(array);
+SelectionSortMax2(array);
 PrintArray(array);
